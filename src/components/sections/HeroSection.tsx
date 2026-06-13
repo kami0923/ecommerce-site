@@ -47,9 +47,9 @@ export const HeroSection = () => {
           {/* Headline */}
           <motion.h1
             variants={titleVariants}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-6 leading-tight"
+            className="font-serif text-5xl md:text-7xl lg:text-7xl font-bold text-primary mb-6 leading-tight"
           >
-            Luxury Redefined
+            Hoorain's Collection
           </motion.h1>
 
           {/* Subheading */}
