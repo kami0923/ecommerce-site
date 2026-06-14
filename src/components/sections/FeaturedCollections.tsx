@@ -9,25 +9,25 @@ const collections = [
     id: 1,
     name: 'Spring Elegance',
     description: '2024 Spring Collection',
-    image: "src/public/images/image1.jpg",
+    image: "public/images/image1.jpg",
   },
   {
     id: 2,
     name: 'Autumn Essence',
     description: '2024 Autumn Collection',
-    image: "src/public/images/image2.jpg",
+    image: "public/images/image2.jpg",
   },
   {
     id: 3,
     name: 'Minimalist Lines',
     description: 'Timeless Essentials',
-    image: "src/public/images/image3.jpg",
+    image: "public/images/image3.jpg",
   },
   {
     id: 4,
     name: 'Urban Edge',
     description: 'Contemporary Collection',
-    image: "src/public/images/image4.jpg",
+    image: "public/images/image4.jpg",
   },
 ]
 
