@@ -4,9 +4,9 @@ import { cn } from '@/lib/utils'
 const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed'
 
 const variants = {
-  primary: 'bg-primary text-white hover:bg-gray-900 shadow-lg hover:shadow-xl',
+primary: 'bg-gray-900 text-white hover:bg-gray-800 shadow-lg hover:shadow-xl',
   secondary: 'bg-secondary text-primary hover:bg-gray-200',
-  outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white',
+  outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white, bg-secondary',
   ghost: 'text-primary hover:bg-secondary',
 }
 
