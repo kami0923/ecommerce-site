@@ -78,16 +78,16 @@ export const Footer = () => {
                 <p className="text-gray-400 text-sm mb-6">
                   Stay updated with new collections and exclusive offers.
                 </p>
-                <form className="flex flex-col sm:flex-row gap-2" onSubmit={(e) => e.preventDefault()}>
+<form className="flex flex-col sm:flex-row gap-2" onSubmit={(e) => e.preventDefault()}>
   <input
     type="email"
     placeholder="Enter your email"
-    className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-gray-400 text-white placeholder-gray-400 focus:outline-gray-400 focus:ring-2 focus:ring-accent hover:border-black w-full"
+    className="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-gray-400 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-black w-full disabled:bg-gray-100"
   />
   <Button
     variant="primary"
     type="submit"
-    className="px-6 py-3 bg-black text-gray-400 rounded-lg transition-colors font-medium text-sm border border-gray-400 w-full sm:w-auto"
+    className="px-6 py-4 bg-black text-gray-400 rounded-lg transition-colors font-medium text-sm border border-gray-400 w-full sm:w-auto"
   >
     Subscribe
   </Button>
