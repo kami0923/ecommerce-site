@@ -10,10 +10,11 @@ export const FadeUp = ({
 }: FadeUpProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 30 }}
-      transition={{ duration, delay }}
+      initial="hidden"
+      whileInView="visible"
+      exit="hidden"
+      custom={delay}
+      variants={fadeUpVariants}
       viewport={{ once: true, margin: '-100px' }}
       className={className}
     >
