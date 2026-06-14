@@ -6,12 +6,12 @@ import { motion } from 'framer-motion'
 // import { icons } from 'lucide-react'
 
 const instagramPosts = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=400&fit=crop' },
-  { id: 2, image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=400&fit=crop' },
-  { id: 3, image: 'https://images.unsplash.com/photo-1523293182886-7651a6ad49e2?w=400&h=400&fit=crop' },
-  { id: 4, image: 'https://images.unsplash.com/photo-1505289012518-c21dba64bcd1?w=400&h=400&fit=crop' },
-  { id: 5, image: 'https://images.unsplash.com/photo-1490481651985-2ad143146313?w=400&h=400&fit=crop' },
-  { id: 6, image: 'https://images.unsplash.com/photo-1441984904556-0ac8ce9feafd?w=400&h=400&fit=crop' },
+  { id: 1, image: 'src/public/images/insta1.jpg' },
+  { id: 2, image: 'src/public/images/insta2.jpg' },
+  { id: 3, image: 'src/public/images/insta3.jpg' },
+  { id: 4, image: 'src/public/images/insta4.jpg' },
+  { id: 5, image: 'src/public/images/insta5.jpg' },
+  { id: 6, image: 'src/public/images/insta6.jpg' },
 ]
 
 export const InstagramGallery = () => {
@@ -64,7 +64,7 @@ export const InstagramGallery = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:text-accent font-medium transition-colors"
+            className="inline-flex items-center gap-2 text-primary hover:text-accent font-medium transition-colors hover:underline  "
           >
             {/* <Instagram size={20} /> */}
             View More on Instagram
