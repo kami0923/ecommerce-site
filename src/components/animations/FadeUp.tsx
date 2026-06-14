@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { FadeUpProps } from '@/types'
-import { fadeUpVariants } from '@/lib/animations'
 
 export const FadeUp = ({
   children,
@@ -10,11 +9,10 @@ export const FadeUp = ({
 }: FadeUpProps) => {
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      exit="hidden"
-      custom={delay}
-      variants={fadeUpVariants}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 30 }}
+      transition={{ duration, delay, ease: 'easeOut' }}
       viewport={{ once: true, margin: '-100px' }}
       className={className}
     >
