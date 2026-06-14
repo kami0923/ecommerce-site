@@ -10,7 +10,7 @@ export const BrandStory = () => {
           {/* Image */}
           <FadeUp delay={0.2}>
             <ImageZoom
-              src="public/images/brand story.jpg"
+              src="/images/brand story.jpg"
               alt="Brand Story"
               className="aspect-square"
             />
