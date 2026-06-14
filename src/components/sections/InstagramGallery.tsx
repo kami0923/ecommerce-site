@@ -6,12 +6,12 @@ import { motion } from 'framer-motion'
 // import { icons } from 'lucide-react'
 
 const instagramPosts = [
-  { id: 1, image: 'src/public/images/insta1.jpg' },
-  { id: 2, image: 'src/public/images/insta2.jpg' },
-  { id: 3, image: 'src/public/images/insta3.jpg' },
-  { id: 4, image: 'src/public/images/insta4.jpg' },
-  { id: 5, image: 'src/public/images/insta5.jpg' },
-  { id: 6, image: 'src/public/images/insta6.jpg' },
+  { id: 1, image: 'public/images/insta1.jpg' },
+  { id: 2, image: 'public/images/insta2.jpg' },
+  { id: 3, image: 'public/images/insta3.jpg' },
+  { id: 4, image: 'public/images/insta4.jpg' },
+  { id: 5, image: 'public/images/insta5.jpg' },
+  { id: 6, image: 'public/images/insta6.jpg' },
 ]
 
 export const InstagramGallery = () => {
