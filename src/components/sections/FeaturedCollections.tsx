@@ -9,25 +9,25 @@ const collections = [
     id: 1,
     name: 'Spring Elegance',
     description: '2024 Spring Collection',
-    image: 'https://images.unsplash.com/photo-1490481651985-2ad143146313?w=500&h=600&fit=crop',
+    image: "src/public/images/image1.jpg",
   },
   {
     id: 2,
     name: 'Autumn Essence',
     description: '2024 Autumn Collection',
-    image: 'https://images.unsplash.com/photo-1445521458279-0ac8890d3de3?w=500&h=600&fit=crop',
+    image: "src/public/images/image2.jpg",
   },
   {
     id: 3,
     name: 'Minimalist Lines',
     description: 'Timeless Essentials',
-    image: 'https://images.unsplash.com/photo-1505289012518-c21dba64bcd1?w=500&h=600&fit=crop',
+    image: "src/public/images/image3.jpg",
   },
   {
     id: 4,
     name: 'Urban Edge',
     description: 'Contemporary Collection',
-    image: 'https://images.unsplash.com/photo-1441984904556-0ac8ce9feafd?w=500&h=600&fit=crop',
+    image: "src/public/images/image4.jpg",
   },
 ]
 

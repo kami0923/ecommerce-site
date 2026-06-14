@@ -26,7 +26,7 @@ export const Newsletter = () => {
   }
 
   return (
-    <section className="py-20 lg:py-32 bg-white">
+    <section className="py-10 lg:py-10 bg-white">
       <Container>
         <FadeUp delay={0.2} className="max-w-3xl mx-auto">
           <div className="text-center mb-12">

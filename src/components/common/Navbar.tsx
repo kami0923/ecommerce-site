@@ -19,14 +19,14 @@ export const Navbar = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-effect border-b border-gray-200' : 'bg-white'
+        isScrolled ? 'bg-white border-b border-gray-200' : 'bg-white'
       }`}
     >
       <Container>
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="text-2xl font-serif font-bold text-primary hover:text-accent transition-colors">
-            LUXURY
+            Hoorain's Collection
           </Link>
 
           {/* Desktop Navigation */}
@@ -35,7 +35,7 @@ export const Navbar = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-primary hover:text-accent transition-colors duration-300 text-sm font-medium uppercase tracking-wide"
+                className="text-primary hover:text-gray-600 transition-colors duration-300 text-sm font-medium uppercase tracking-wide cursor-pointer rounded-lg px-4 py-2 underline-offset-4 hover:underline"
               >
                 {link.label}
               </Link>
@@ -68,7 +68,7 @@ export const Navbar = () => {
                   key={link.href}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-primary hover:text-accent transition-colors text-sm font-medium uppercase tracking-wide px-4 py-2 rounded-lg hover:bg-secondary"
+                  className="text-primary hover:text-accent transition-colors text-sm font-medium uppercase tracking-wide px-4 py-2 rounded-lg hover:bg-secondary cursor-pointer"
                 >
                   {link.label}
                 </Link>
