@@ -25,18 +25,20 @@ export const Navbar = () => {
       <Container>
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-serif font-bold text-primary hover:text-accent transition-colors">
+          {/* <Link to="/" className="text-2xl font-serif font-bold text-primary hover:text-accent transition-colors">
             Hoorain's Collection
-          </Link>
-
+          </Link> */}
+          {/* Logo */}
+<Link to="/" className="hover:opacity-80 transition-opacity">
+  <img src="/images/logo.png" alt="Hoorain's Collection" className="h-10 md:h-12 w-auto" />
+</Link>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className="text-primary hover:text-gray-600 transition-colors duration-300 text-sm font-medium uppercase tracking-wide cursor-pointer rounded-lg px-4 py-2 underline-offset-4 hover:underline"
-              >
+className="text-primary hover:text-gray-600 transition-colors duration-300 text-sm font-medium uppercase tracking-wide cursor-pointer rounded-lg px-4 py-2 underline-offset-4 hover:[text-decoration:underline] hover:[text-decoration-thickness:2px] hover:[transition:text-decoration_0.5s_ease]"              >
                 {link.label}
               </Link>
             ))}

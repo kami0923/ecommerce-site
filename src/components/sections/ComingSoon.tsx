@@ -9,7 +9,7 @@ const CountdownItem = ({ label, value }: { label: string; value: number }) => {
       className="flex flex-col items-center"
       whileHover={{ scale: 1.05 }}
     >
-      <div className="bg-primary text-white rounded-lg w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mb-4">
+      <div className="bg-primary text-gray-800 rounded-lg w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mb-4">
         <span className="font-serif text-3xl md:text-4xl font-bold">
           {String(value).padStart(2, '0')}
         </span>
@@ -41,7 +41,7 @@ export const ComingSoon = () => {
         </FadeUp>
 
         {/* Countdown */}
-        <div className="flex justify-center gap-6 md:gap-10 mb-16">
+        <div className="flex  justify-center gap-6 md:gap-10 mb-16">
           <CountdownItem label="Days" value={countdown.days} />
           <CountdownItem label="Hours" value={countdown.hours} />
           <CountdownItem label="Minutes" value={countdown.minutes} />
@@ -56,7 +56,7 @@ export const ComingSoon = () => {
               placeholder="Get notified at launch"
               className="flex-1 px-6 py-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-primary"
             />
-            <button className="px-8 py-4 bg-primary text-white rounded-lg hover:bg-gray-900 transition-colors font-medium">
+            <button className="px-8 py-4 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium">
               Notify Me
             </button>
           </form>

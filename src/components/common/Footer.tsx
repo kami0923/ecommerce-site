@@ -48,7 +48,7 @@ export const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             {footerLinks.map((column) => (
               <div key={column.title}>
-                <h3 className="text-sm font-serif font-bold mb-6 uppercase tracking-wide">
+                <h3 className="text-sm text-gray-800 font-serif font-bold mb-6 uppercase tracking-wide">
                   {column.title}
                 </h3>
                 <ul className="space-y-3">
