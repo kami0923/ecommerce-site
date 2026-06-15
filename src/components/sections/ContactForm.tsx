@@ -9,6 +9,8 @@ import { Button } from '@/components/common/Button'
 import { FadeUp } from '@/components/animations/FadeUp'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'   // ADDED: import EmailJS library
+
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -30,14 +32,49 @@ export const ContactForm = () => {
     resolver: zodResolver(contactSchema),
   })
 
-  const onSubmit = async (data: ContactFormData) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    console.log('Form data:', data)
+
+  //updated onsubmit as per emailjs template 
+  // ContactForm.tsx
+
+// ADDED: import at the very top of the file (line 1, with other imports)
+
+
+// CHANGED: replace your existing onSubmit function with this
+const onSubmit = async (data: ContactFormData) => {
+  try {
+    // ADDED: send email via EmailJS
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: data.name,        // matches {{name}} in template
+        email: data.email,      // matches {{email}} in template
+        subject: data.subject,  // matches {{subject}} in template
+        message: data.message,  // matches {{message}} in template
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+
+    // UNCHANGED: show success and reset form
     setIsSubmitted(true)
     reset()
     setTimeout(() => setIsSubmitted(false), 3000)
+
+  }  catch (error: any) {
+    // CHANGED: show exact error reason
+    console.log('Status:', error.status)
+    console.log('Reason:', error.text)   // ← tells us exact problem
+    alert(`Error: ${error.text}`)        // shows exact reason on screen
   }
+}
+  // const onSubmit = async (data: ContactFormData) => {
+  //   // Simulate API call
+  //   await new Promise((resolve) => setTimeout(resolve, 1000))
+  //   console.log('Form data:', data)
+  //   setIsSubmitted(true)
+  //   reset()
+  //   setTimeout(() => setIsSubmitted(false), 3000)
+  // }
 
   return (
     <section className="py-20 lg:py-32 bg-secondary">
