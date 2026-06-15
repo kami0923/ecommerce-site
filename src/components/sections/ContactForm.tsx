@@ -7,7 +7,7 @@ import { FormInput } from '@/components/common/FormInput'
 import { FormTextarea } from '@/components/common/FormTextarea'
 import { Button } from '@/components/common/Button'
 import { FadeUp } from '@/components/animations/FadeUp'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock} from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const contactSchema = z.object({
@@ -59,7 +59,7 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Email</h3>
-                  <p className="text-gray-600">hello@luxurybrand.com</p>
+                  <p className="text-gray-600">shoaibahmed4131@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -72,7 +72,7 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+92306-6330833</p>
                 </div>
               </motion.div>
 
@@ -85,7 +85,20 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-1">Address</h3>
-                  <p className="text-gray-600">123 Fashion Street, New York, NY 10001</p>
+                  <p className="text-gray-600">Plot# 4&5, D-Markaz, D-Block, Gulberg Residencia, Islamabad</p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ x: 10 }}
+                className="flex gap-4"
+              >
+                <div className="text-accent mt-1">
+                  <Clock size={24} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-1">Timing</h3>
+                  <p className="text-gray-600">Monday - Sunday 11:00 AM - 10:00 PM</p>
                 </div>
               </motion.div>
             </div>
@@ -95,7 +108,7 @@ export const ContactForm = () => {
                 <strong>WhatsApp:</strong> Chat with us directly
               </p>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/923066330833"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium"
