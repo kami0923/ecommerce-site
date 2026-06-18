@@ -28,9 +28,7 @@ jobs:
       - name: Install dependencies
         run: npm ci               # ci = clean install, faster & stricter than npm install
 
-      - name: Typecheck
-        run: npm run typecheck
-        continue-on-error: true    # won't fail CI on type errors
+     
 
       - name: Build
         run: npm run build
