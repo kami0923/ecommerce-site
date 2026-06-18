@@ -1,0 +1,35 @@
+# .github/workflows/ci.yml
+
+name: CI                          # shown in the GitHub Actions tab
+
+on:                               # WHEN to trigger
+  push:
+    branches: [main, kami-dev]     # runs on pushes to these branches
+  pull_request:
+    branches: [main]              # runs when a PR targets main
+
+jobs:
+  build:                          # job name (can be anything)
+    runs-on: ubuntu-latest        # the VM GitHub spins up for you (free)
+
+    steps:
+      # 1. Pull your code onto the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up the Node version you use locally
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.17.1
+          cache: npm              # caches node_modules between runs (faster)
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm ci               # ci = clean install, faster & stricter than npm install
+
+
+
+      # 5. Build the app (Vite produces dist/)
+      - name: Build
+        run: npm run build
