@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",          
+  "typecheck": "tsc --noEmit",    
+  "preview": "vite preview"
+}
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
