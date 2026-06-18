@@ -6,7 +6,7 @@ const baseStyles = 'inline-flex items-center justify-center font-medium rounded-
 const variants = {
 primary: 'bg-gray-900 text-white hover:bg-gray-800 shadow-lg hover:shadow-xl',
   secondary: 'bg-secondary text-primary hover:bg-gray-200',
-  outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white, bg-secondary',
+  outline: 'border-2 border-primary bg-white text-primary hover:bg-primary hover:text-dark',
   ghost: 'text-primary hover:bg-secondary',
 }
 
