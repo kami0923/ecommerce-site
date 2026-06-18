@@ -1,49 +1,69 @@
 import { Container } from '@/components/common/Container'
 import { FadeUp } from '@/components/animations/FadeUp'
 import { ContactForm } from '@/components/sections/ContactForm'
+import { MapPin, Navigation } from 'lucide-react'
 
 export const Contact = () => {
+  const mapQuery = encodeURIComponent('Hoorain Collection Gulberg pride 2 LLp')
+
   return (
     <main className="pt-20">
-      {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-secondary">
+      <section className="bg-secondary py-16 lg:py-24">
         <Container>
-          <FadeUp delay={0.2} className="max-w-3xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6">
-              Get in Touch
+          <FadeUp delay={0.2} className="mx-auto max-w-3xl text-center">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-primary">
+              <MapPin size={16} className="text-accent" />
+              Islamabad boutique support
+            </div>
+            <h1 className="text-5xl text-primary md:text-6xl lg:text-7xl">
+              Visit, call, or message Hoorain's Collection
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              Have questions or ready to join our community? We'd love to hear from you. Reach out through any of the channels below.
+            <p className="mt-6 text-lg leading-relaxed text-gray-600 md:text-xl">
+              Whether you need size guidance, product availability, or directions to the
+              store, every contact option is kept simple and direct.
             </p>
           </FadeUp>
         </Container>
       </section>
 
-      {/* Contact Form Section */}
       <ContactForm />
 
-      {/* Map Embed Section */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="bg-secondary py-16 lg:py-24">
         <Container>
-          <FadeUp delay={0.2} className="mb-12">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4">
-              Visit Us
-            </h2>
-            <p className="text-center text-gray-600 text-lg">
-              Our flagship store is located in the heart of New York
-            </p>
-          </FadeUp>
+          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <FadeUp delay={0.2}>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-accent">
+                Store Location
+              </p>
+              <h2 className="text-4xl text-primary md:text-5xl">Find us in Gulberg Residencia</h2>
+              <p className="mt-4 leading-relaxed text-gray-600">
+                Plot# 4&5, D-Markaz, D-Block, Gulberg Residencia, Islamabad.
+              </p>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-semibold text-white transition hover:bg-gray-800"
+              >
+                <Navigation size={18} />
+                Open Directions
+              </a>
+            </FadeUp>
 
-          <div className="w-full h-96 rounded-lg overflow-hidden border-2 border-gray-200 hover:border-accent transition-colors">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.00601234567890!3d40.71234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316c2f9c3f%3A0x1234567890abcdef!2s123%20Fashion%20Street%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890123"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <FadeUp delay={0.3}>
+              <div className="h-[420px] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+                <iframe
+                  title="Hoorain's Collection location"
+                  src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </FadeUp>
           </div>
         </Container>
       </section>
