@@ -43,7 +43,7 @@ export const Contact = () => {
                 href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 font-semibold text-white transition hover:bg-gray-800"
+                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-gray-800 px-5 py-3 font-semibold text-white transition hover:bg-gray-600"
               >
                 <Navigation size={18} />
                 Open Directions
