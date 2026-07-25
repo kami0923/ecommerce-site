@@ -49,7 +49,7 @@ export const HeroSection = () => {
             variants={titleVariants}
             className="text-5xl md:text-7xl lg:text-7xl  text-primary mb-6 leading-tight"
           >
-            Hoorain's Collection
+            H Collection
           </motion.h1>
 
           {/* Subheading */}
@@ -57,7 +57,8 @@ export const HeroSection = () => {
             variants={descriptionVariants}
             className="text-lg md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Discover our curated collection of premium fashion designed for those who appreciate timeless elegance and modern craftsmanship.
+            Empowering women to start home-based businesses with zero investment,
+            zero risk, brand support, and access to trusted fashion supply.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -65,11 +66,11 @@ export const HeroSection = () => {
             variants={buttonsVariants}
             className="flex flex-col sm:flex-row gap-6 justify-center mb-20"
           >
-            <Button size="lg" variant="primary">
-              Explore Collections
+            <Button size="lg" variant="primary" onClick={scrollToNextSection}>
+              Explore Our Model
             </Button>
-            <Button size="lg" variant="outline">
-              View Latest
+            <Button size="lg" variant="outline" onClick={() => window.location.href = '/contact'}>
+              Become a Partner
             </Button>
           </motion.div>
         </motion.div>

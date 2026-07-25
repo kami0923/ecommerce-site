@@ -16,11 +16,11 @@ export const Contact = () => {
               Islamabad boutique support
             </div>
             <h1 className="text-5xl text-primary md:text-6xl lg:text-7xl">
-              Visit, call, or message Hoorain's Collection
+              Visit, call, or message H Collection
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-gray-600 md:text-xl">
-              Whether you need size guidance, product availability, or directions to the
-              store, every contact option is kept simple and direct.
+              Whether you want to join from home, partner as a retailer, collaborate
+              as a brand, or support as a donor, every contact option is simple.
             </p>
           </FadeUp>
         </Container>
@@ -53,7 +53,7 @@ export const Contact = () => {
             <FadeUp delay={0.3}>
               <div className="h-[420px] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
                 <iframe
-                  title="Hoorain's Collection location"
+                  title="H Collection location"
                   src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
                   width="100%"
                   height="100%"

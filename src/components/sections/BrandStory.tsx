@@ -23,26 +23,28 @@ export const BrandStory = () => {
                 Our Story
               </p>
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-                Crafted with Precision
+                A Platform for Women-Led Growth
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2020, our brand emerged from a simple vision: to create fashion that transcends trends and celebrates individuality. Every piece is meticulously crafted using the finest materials and time-honored techniques.
+                H Collection helps women start and grow home-based fashion businesses
+                without stock investment, financial risk, or complicated setup.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We believe in quality over quantity, sustainability, and the timeless appeal of minimalist design. Our collections reflect our commitment to excellence and our passion for creating pieces that will be cherished for years to come.
+                We also support retailers through wholesale supply, brand access, and
+                reliable sourcing from our official collaborations.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-4">
                   <span className="text-accent text-2xl font-bold mt-1">✓</span>
-                  <span className="text-gray-600">Premium materials sourced responsibly</span>
+                  <span className="text-gray-600">Zero investment opportunity for women at home</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-accent text-2xl font-bold mt-1">✓</span>
-                  <span className="text-gray-600">Handcrafted by master artisans</span>
+                  <span className="text-gray-600">Wholesale support for retail partners</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="text-accent text-2xl font-bold mt-1">✓</span>
-                  <span className="text-gray-600">Limited edition collections</span>
+                  <span className="text-gray-600">Looking for national and international donor support</span>
                 </li>
               </ul>
             </div>

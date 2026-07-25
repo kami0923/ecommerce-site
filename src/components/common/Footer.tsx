@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 const footerLinks = [
   {
-    title: 'Shop',
+    title: 'Platform',
     links: [
-      { label: 'New Arrivals', href: '/shop' },
-      { label: 'Collections', href: '/shop' },
-      { label: 'Best Sellers', href: '/shop' },
+      { label: 'Women Partners', href: '/shop' },
+      { label: 'Wholesale', href: '/shop' },
+      { label: 'Donor Support', href: '/shop' },
     ],
   },
   {
@@ -17,15 +17,15 @@ const footerLinks = [
     links: [
       { label: 'About Us', href: '/about' },
       { label: 'Contact', href: '/contact' },
-      { label: 'Visit Store', href: '/contact' },
+      { label: 'Visit Office', href: '/contact' },
     ],
   },
   {
     title: 'Support',
     links: [
       { label: 'WhatsApp Support', href: 'https://wa.me/923066330833' },
-      { label: 'Size Help', href: '/contact' },
-      { label: 'Order Assistance', href: '/contact' },
+      { label: 'Retail Partnership', href: '/contact' },
+      { label: 'Brand Collaboration', href: '/contact' },
     ],
   },
   {
@@ -45,7 +45,7 @@ const storeInfo = [
     href: 'https://www.google.com/maps/search/?api=1&query=Plot%23%204%265%2C%20D-Markaz%2C%20D-Block%2C%20Gulberg%20Residencia%2C%20Islamabad',
   },
   { icon: Phone, label: '+92 306 6330833', href: 'tel:+923066330833' },
-  { icon: Mail, label: 'shoaibahmed4131@gmail.com', href: 'mailto:shoaibahmed4131@gmail.com' },
+  { icon: Mail, label: 'hcollection130@gmail.com', href: 'mailto:hcollection130@gmail.com' },
   { icon: Clock, label: 'Open daily, 11:00 AM - 10:00 PM' },
 ]
 
@@ -58,14 +58,14 @@ export const Footer = () => {
         <div className="py-10 md:py-14">
           <div className="mb-10 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
-              <h2 className="text-4xl text-primary">Hoorain's Collection</h2>
+              <h2 className="text-4xl text-primary">H Collection</h2>
               <p className="mt-4 max-w-xl leading-relaxed text-gray-600">
-                Premium fashion pieces, direct WhatsApp ordering, and in-store support
-                from Gulberg Residencia, Islamabad.
+                A women empowerment and wholesale platform helping home-based
+                entrepreneurs start with zero investment and zero risk.
               </p>
             </div>
             <div className="rounded-lg border border-gray-200 bg-secondary p-5">
-              <h3 className="mb-4 text-xl text-primary">Store Details</h3>
+              <h3 className="mb-4 text-xl text-primary">Platform Details</h3>
               <div className="space-y-3">
                 {storeInfo.map((item) => {
                   const Icon = item.icon
@@ -129,7 +129,7 @@ export const Footer = () => {
           <div className="mt-10 flex flex-col gap-6 border-t border-gray-200 pt-8 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-sm text-gray-500">
-                &copy; {currentYear} Hoorain's Collection. All rights reserved.
+                &copy; {currentYear} H Collection. All rights reserved.
               </p>
               <p className="mt-1 text-sm text-gray-400">
                 Designed by Shoaib Ahmed for premium experiences.

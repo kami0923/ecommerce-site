@@ -40,7 +40,8 @@ export const Newsletter = () => {
               Stay Updated
             </h2>
             <p className="text-gray-600 text-lg">
-              Subscribe to our newsletter for exclusive collections, early access to sales, and insider content.
+              Subscribe for updates about women partner programs, donor opportunities,
+              wholesale support, and brand collaborations.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Heart, Menu, Search, ShoppingBag, X } from 'lucide-react'
+import { Handshake, Menu, X } from 'lucide-react'
 import { useNavbarBlur } from '@/hooks/useNavbarBlur'
 import { Container } from '@/components/common/Container'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -9,34 +9,13 @@ import { cn } from '@/lib/utils'
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Shop', href: '/shop' },
+  { label: 'Opportunities', href: '/shop' },
   { label: 'Contact', href: '/contact' },
 ]
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [wishlistCount, setWishlistCount] = useState(0)
-  const [cartCount, setCartCount] = useState(0)
   const isScrolled = useNavbarBlur()
-
-  useEffect(() => {
-    const syncShopCounts = () => {
-      const wishlist = JSON.parse(localStorage.getItem('hoorain-wishlist') || '[]') as string[]
-      const cart = JSON.parse(localStorage.getItem('hoorain-cart') || '[]') as string[]
-
-      setWishlistCount(wishlist.length)
-      setCartCount(cart.length)
-    }
-
-    syncShopCounts()
-    window.addEventListener('hoorain-shop-update', syncShopCounts)
-    window.addEventListener('storage', syncShopCounts)
-
-    return () => {
-      window.removeEventListener('hoorain-shop-update', syncShopCounts)
-      window.removeEventListener('storage', syncShopCounts)
-    }
-  }, [])
 
   return (
     <header
@@ -53,14 +32,14 @@ export const Navbar = () => {
             <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-gray-200 bg-white shadow-sm transition group-hover:shadow-md">
               <img
                 src="/images/logo.png"
-                alt="Hoorain's Collection"
+                alt="H Collection"
                 className="h-9 w-9 object-contain"
                 decoding="async"
               />
             </span>
             <span className="hidden leading-tight sm:block">
               <span className="block font-serif text-xl font-bold text-primary">
-                Hoorain's
+                H Collection
               </span>
               <span className="block text-[11px] font-semibold uppercase tracking-[0.24em] text-accent">
                 Collection
@@ -89,35 +68,11 @@ export const Navbar = () => {
 
           <div className="flex items-center gap-2">
             <Link
-              to="/shop?focus=search#shop-grid"
-              className="hidden h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-primary transition hover:border-primary hover:bg-secondary md:inline-flex"
-              aria-label="Search"
-            >
-              <Search size={18} />
-            </Link>
-            <Link
-              to="/shop?panel=wishlist"
-              className="relative hidden h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-primary transition hover:border-primary hover:bg-secondary md:inline-flex"
-              aria-label="Wishlist"
-            >
-              <Heart size={18} />
-              {wishlistCount > 0 && (
-<span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-gray-900 px-1 text-[11px] font-bold text-white ring-2 ring-white">
-  {wishlistCount}
-</span>
-              )}
-            </Link>
-            <Link
               to="/shop"
 className="relative hidden items-center gap-2 rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-gray-800 md:inline-flex"
             >
-              <ShoppingBag size={18} />
-              Shop Now
-              {cartCount > 0 && (
-<span className="ml-1 rounded-full bg-white px-2 py-0.5 text-xs font-bold text-gray-900">
-                  {cartCount}
-                </span>
-              )}
+              <Handshake size={18} />
+              Partner With Us
             </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -141,35 +96,15 @@ className="relative hidden items-center gap-2 rounded-full bg-gray-900 px-5 py-2
           >
             <Container>
               <div className="py-4">
-                <div className="mb-4 grid grid-cols-3 gap-2">
-                  <Link
-                    to="/shop?focus=search#shop-grid"
-                    onClick={() => setIsOpen(false)}
-                    className="flex h-11 items-center justify-center rounded-lg bg-secondary text-primary"
-                    aria-label="Search"
-                  >
-                    <Search size={18} />
-                  </Link>
-                  <Link
-                    to="/shop?panel=wishlist"
-                    onClick={() => setIsOpen(false)}
-                    className="relative flex h-11 items-center justify-center rounded-lg bg-secondary text-primary"
-                    aria-label="Wishlist"
-                  >
-                    <Heart size={18} />
-                    {wishlistCount > 0 && (
-                      <span className="absolute right-3 top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[11px] font-bold text-white">
-                        {wishlistCount}
-                      </span>
-                    )}
-                  </Link>
+                <div className="mb-4">
                   <Link
                     to="/shop"
                     onClick={() => setIsOpen(false)}
-                    className="flex h-11 items-center justify-center rounded-lg bg-primary text-white"
-                    aria-label="Shop"
+                    className="flex h-11 items-center justify-center gap-2 rounded-lg bg-primary text-white"
+                    aria-label="Partner With Us"
                   >
-                    <ShoppingBag size={18} />
+                    <Handshake size={18} />
+                    Partner With Us
                   </Link>
                 </div>
                 <div className="flex flex-col gap-2">
