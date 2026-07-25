@@ -8,20 +8,20 @@ import { motion } from 'framer-motion'
 
 const values = [
   {
-    title: 'Excellence',
-    description: 'We never compromise on quality or craftsmanship',
+    title: 'Empowerment',
+    description: 'We create earning pathways for women who want to work from home',
   },
   {
-    title: 'Innovation',
-    description: 'Constantly evolving while respecting timeless design',
+    title: 'Zero Risk',
+    description: 'Our model reduces barriers by removing stock investment pressure',
   },
   {
-    title: 'Sustainability',
-    description: 'Committed to ethical practices and environmental responsibility',
+    title: 'Trust',
+    description: 'We work through credible organizations, retailers, donors, and brands',
   },
   {
     title: 'Community',
-    description: 'Building meaningful connections with our customers',
+    description: 'We build networks between women entrepreneurs and retail markets',
   },
 ]
 
@@ -33,10 +33,11 @@ export const About = () => {
         <Container>
           <FadeUp delay={0.2} className="max-w-3xl mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6">
-              About Our Brand
+              About H Collection
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              We believe that luxury is not just about price, but about the experience, craftsmanship, and values behind every piece.
+              We are a women empowerment and wholesale platform helping families
+              build income through home-based business opportunities.
             </p>
           </FadeUp>
         </Container>
@@ -51,10 +52,12 @@ export const About = () => {
                 Our Vision
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                To become the most trusted luxury brand for individuals who value quality, sustainability, and timeless design. We envision a world where fashion transcends trends and becomes a form of self-expression.
+                To become a trusted national platform where women can start earning
+                from home with dignity, support, and access to reliable fashion supply.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Every collection we create is a testament to our commitment to excellence and our belief that true luxury stands the test of time.
+                We want donors, brands, and retailers to work together in a practical
+                model that creates real income opportunities.
               </p>
             </FadeUp>
 
@@ -63,10 +66,13 @@ export const About = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                We create beautifully crafted garments using the finest materials, sustainable practices, and innovative design. Our mission is to empower our customers to express their unique style while feeling confident and connected to a brand that shares their values.
+                Our mission is to empower women to start businesses with zero
+                investment and zero risk, while also serving retailers through
+                wholesale access to trusted fashion brands.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We're dedicated to pushing the boundaries of what luxury fashion can be.
+                We are focused on partnerships that can scale nationally and
+                internationally with donor and brand support.
               </p>
             </FadeUp>
           </div>

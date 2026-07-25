@@ -62,8 +62,8 @@ export const ContactForm = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'shoaibahmed4131@gmail.com',
-      href: 'mailto:shoaibahmed4131@gmail.com',
+      value: 'hcollection130@gmail.com',
+      href: 'mailto:hcollection130@gmail.com',
     },
     {
       icon: Phone,
@@ -95,8 +95,8 @@ export const ContactForm = () => {
               </p>
               <h2 className="text-4xl text-primary md:text-5xl">We are here to help</h2>
               <p className="mt-4 leading-relaxed text-gray-600">
-                Ask about sizes, availability, custom styling, or your visit to our Islamabad
-                location. We usually respond fastest on WhatsApp.
+                Ask about joining as a home-based partner, wholesale supply, donor
+                support, brand collaboration, or visiting our Islamabad location.
               </p>
 
               <div className="mt-8 space-y-3">

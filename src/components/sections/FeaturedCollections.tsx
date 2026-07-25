@@ -7,26 +7,26 @@ import { motion } from 'framer-motion'
 const collections = [
   {
     id: 1,
-    name: 'Spring Elegance',
-    description: '2024 Spring Collection',
+    name: 'Women Entrepreneurs',
+    description: 'Home-based business support',
     image: "/images/optimized/image1.jpg",
   },
   {
     id: 2,
-    name: 'Autumn Essence',
-    description: '2024 Autumn Collection',
+    name: 'Retail Wholesale',
+    description: 'Supply for stores and resellers',
     image: "/images/optimized/image2.jpg",
   },
   {
     id: 3,
-    name: 'Minimalist Lines',
-    description: 'Timeless Essentials',
+    name: 'Brand Collaborations',
+    description: 'Access to trusted fashion brands',
     image: "/images/optimized/image3.jpg",
   },
   {
     id: 4,
-    name: 'Urban Edge',
-    description: 'Contemporary Collection',
+    name: 'Donor Partnerships',
+    description: 'National and international support',
     image: "/images/optimized/image4.jpg",
   },
 ]
@@ -37,10 +37,10 @@ export const FeaturedCollections = () => {
       <Container>
         <FadeUp delay={0.2} className="mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
-            Featured Collections
+            What H Collection Does
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto">
-            Explore our handpicked selections of premium fashion for every season
+            We connect women, retailers, donors, and brands through a practical empowerment model.
           </p>
         </FadeUp>
 

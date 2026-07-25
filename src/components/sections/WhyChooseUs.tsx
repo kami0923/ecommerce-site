@@ -2,33 +2,33 @@ import { Container } from '@/components/common/Container'
 import { FadeUp } from '@/components/animations/FadeUp'
 import { StaggerContainer } from '@/components/animations/StaggerContainer'
 import { Card } from '@/components/common/Card'
-import { Award, Leaf, Zap, Crown } from 'lucide-react'
+import { BadgeCheck, HandCoins, Handshake, Home } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const values = [
   {
     id: 1,
-    icon: Award,
-    title: 'Premium Quality',
-    description: 'Handcrafted with the finest materials and meticulous attention to detail',
+    icon: Home,
+    title: 'Start From Home',
+    description: 'Women can begin earning from home without renting a shop or buying stock.',
   },
   {
     id: 2,
-    icon: Leaf,
-    title: 'Sustainable',
-    description: 'Ethical sourcing and eco-conscious production practices',
+    icon: HandCoins,
+    title: 'Zero Investment',
+    description: 'Our model removes upfront cost and reduces business risk for new sellers.',
   },
   {
     id: 3,
-    icon: Zap,
-    title: 'Modern Design',
-    description: 'Contemporary aesthetics meeting timeless elegance',
+    icon: Handshake,
+    title: 'Wholesale Network',
+    description: 'Retailers get dependable access to fashion supply and branded products.',
   },
   {
     id: 4,
-    icon: Crown,
-    title: 'Exclusivity',
-    description: 'Limited edition collections for discerning individuals',
+    icon: BadgeCheck,
+    title: 'Trusted Platform',
+    description: 'Registered and connected with respected business and development organizations.',
   },
 ]
 
@@ -41,7 +41,7 @@ export const WhyChooseUs = () => {
             Why Choose Us
           </h2>
           <p className="text-center text-gray-600 text-lg max-w-2xl mx-auto">
-            We stand apart through our unwavering commitment to excellence and craftsmanship
+            We combine women empowerment, wholesale access, and brand partnerships in one platform.
           </p>
         </FadeUp>
 
